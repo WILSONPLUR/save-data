@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Шляхи захисту даних</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <!-- <div class="menu">
+          <a class="nav-item" href="#wifi">WiFi</a>
+          <a class="nav-item" href="#password">Паролі</a>
+          <a class="nav-item" href="#auth">Аутентифікація</a>
+          <a class="nav-item" href="#line">Рядок</a>
+          <a class="nav-item" href="#copyright">Право</a>
+        </div> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger text-white">
+          <div class="container-fluid text-white">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse text-white"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white"
+                    aria-current="page"
+                    href="#wifi"
+                    >WiFi</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#password">Паролі</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#auth">Аутентифікація</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#line">Рядок</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#copyright">Право</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="main-content">
+        <div class="container">
+          <div class="main-content__block" id="wifi">
+            <h1
+              class="main-content-h1 wifi-title wow slideInLeft"
+              data-wow-duration="1.4s"
+            >
+              Не підключайся до громадського WiFi
+            </h1>
+            <p class="main-content-p wow slideInRight" data-wow-duration="1.4s">
+              Звичайно, ти хочеш завжди бути на зв’язку. І там, де немає сигналу
+              мобільного інтернету обираєш WiFi-з’єднання. Громадські мережі не
+              завжди захищені паролем, іноді від тебе вимагають зареєструватись
+              та зайти на сайт. Але деякі мережі відкриті для всіх користувачів
+              без додаткових дій. Підключатись до відкритого WiFi – погана ідея.
+              Хакери можуть створити мережу – двійника із такою ж назвою та
+              перехопити твої дані. Краще пошукай місце, де є мобільний
+              інтернет.
+            </p>
+          </div>
+          <div class="main-content__block" id="password">
+            <h1 class="main-content-h1 wow slideInUp" data-wow-duration="1.4s">
+              Створюй складні паролі
+            </h1>
+            <p class="main-content-p wow slideInDown" data-wow-duration="1.4s">
+              Щодня заходиш на Facebook та перевіряєш робочу пошту. Користуєшся
+              онлайн-банкінгом та купуєш речі в інтернеті. Використовувати один
+              пароль для всіх акаунтів – просте, але й легковажне рішення. Можна
+              вигадувати і записувати паролі у блокноті – це надійніший та
+              складніший спосіб.<br /><br />
+
+              А менеджери паролів допоможуть генерувати складні та унікальні
+              паролі для кожного сайту та тримати їх в одному місці. Ми радимо
+              спробувати 1password – тут можна створити особистий, сімейний або
+              бізнес-акаунт. А ще в додатку є електронний гаманець, який
+              зберігає всі твої кредитки.<br /><br />
+
+              LastPass – ще один застосунок, де ти створиш паролі для всіх
+              акаунтів. Тут зручний інтерфейс, крім того – ти зможеш швидше
+              купляти товар в онлайн-магазинах та ділитися паролями із близькими
+              за допомогою безпечного каналу.<br /><br />
+
+              Або ж обирай KeePass – у цього менеджера паролів не найсучасніший
+              інтерфейс, проте на сайті можна знайти різні версії під будь-яку
+              операційну систему. Крім того – у цього застосунка відкритий код,
+              його можна перевірити на вразливість.
+            </p>
+          </div>
+          <div class="main-content__block" id="auth">
+            <h1
+              class="main-content-h1 wow fadeInLeft"
+              data-wow-delay="0.2s"
+              data-wow-duration="1.4s"
+            >
+              Використовуй двофакторну аутентифікацію
+            </h1>
+            <p
+              class="main-content-p wow fadeInRight"
+              data-wow-delay="0.2s"
+              data-wow-duration="1.4s"
+            >
+              Профіль Google постійно прохає тебе налаштувати подвійне
+              підтвердження входу. Найчастіше це смс-повідомлення або дзвінок.
+              Але надсилання даних за допомогою смс незахищене – інформацію з
+              цього каналу найлегше перехопити. У глобальної мережі SS7, якою
+              користується більшість мобільних мобільних операторів світу є
+              багато больових точок. Сигнальний телефонний протокол був
+              розроблений більш ніж 40 років тому. Замість каналу СМС спробуй
+              Google Authenticator та підтверджуй вхід до акаунту за допомогою
+              безпечного застосунку.
+            </p>
+          </div>
+          <div class="main-content__block" id="line">
+            <h1
+              class="main-content-h1 wow slideInLeft"
+              data-wow-delay="0.2s"
+              data-wow-duration="1.4s"
+            >
+              Слідкуй за адресним рядком
+            </h1>
+            <p
+              class="main-content-p last-child wow slideInRight"
+              data-wow-duration="1.4s"
+            >
+              Твій браузер має використовувати HTTPS, а не HTTP. Цей протокол
+              більш безпечний, ніж HTTP, він шифрує всю інформацію та захищає
+              від атак. Можна встановити HTTPS Everywhere та змусити сайти
+              використовувати захищений протокол всюди, де це можливо. А якщо не
+              хочеш додаткових розширень, слідкуй, аби HTTPS обов’язково був в
+              адресному рядку сайтів, де ти залишаєш дані банківської карти.
+            </p>
+          </div>
+          <div class="main-content__block" id="copyright">
+            <h1 class="main-content-h1 wow slideInUp" data-wow-duration="1.4s">
+              Про авторське право
+            </h1>
+            <h3
+              class="main-content-h3 wow slideInDown"
+              data-wow-duration="1.4s"
+            >
+              Розділ I. ЗАГАЛЬНІ ПОЛОЖЕННЯ
+            </h3>
+            <h4
+              class="main-content-h4 wow fadeInDown"
+              data-wow-delay="0.2s"
+              data-wow-duration="1.4s"
+            >
+              Стаття 1. Права, що охороняються цим Законом
+            </h4>
+            <p
+              class="main-content-p last-child wow slideInUp"
+              data-wow-duration="1.4s"
+            >
+              Цей Закон охороняє особисті (немайнові) і майнові права авторів та
+              їх правонаступників, пов'язані із створенням та використанням
+              творів науки, літератури і мистецтва (авторське право), і права
+              виконавців, виробників фонограм та організацій мовлення (суміжні
+              права). Законодавство України про авторське право і суміжні права
+              складається з цього Закону та інших законодавчих актів України, що
+              охороняють особисті (немайнові) та майнові права осіб, яким
+              належать авторське право і суміжні права.
+            </p>
+            <h4
+              class="main-content-h4 wow slideInLeft"
+              data-wow-delay="0.2s"
+              data-wow-duration="1.4s"
+            >
+              Стаття 2. Законодавство України про авторське право і суміжні
+              права
+            </h4>
+            <p class="main-content-p wow slideInRight" data-wow-duration="1.4s">
+              Законодавство України про авторське право і суміжні права
+              складається з цього Закону та інших законодавчих актів України, що
+              охороняють особисті (немайнові) та майнові права осіб, яким
+              належать авторське право і суміжні права.
+            </p>
+            <h4
+              class="main-content-h4 wow slideInLeft"
+              data-wow-delay="0.2s"
+              data-wow-duration="1.4s"
+            >
+              Стаття 3. Застосування правил міжнародного договору
+            </h4>
+            <p
+              class="main-content-p wow slideInLeft"
+              data-wow-delay="0.2s"
+              data-wow-duration="1.4s"
+            >
+              Якщо міжнародним договором, учасником якого є Україна, встановлено
+              інші правила, ніж ті, що містяться в законодавстві України про
+              авторське право і суміжні права, то застосовуються правила
+              міжнародного договору.
+            </p>
+            <div class="readmore-block">
+              <button
+                type="button"
+                class="btn btn-primary wow fadeInRight"
+                data-wow-delay="0.3s"
+                data-wow-duration="1.4s"
+              >
+                <a
+                  href="http://search.ligazakon.ua/l_doc2.nsf/link1/ed_1999_07_16/T379200.html"
+                  target="_blank"
+                  >Дізнатися більше</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript">
+      new WOW().init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+      integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
